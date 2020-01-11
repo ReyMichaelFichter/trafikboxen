@@ -12,7 +12,8 @@ def fetch_sl_station_id(search_string: str) -> str:
     """
     params = {
         "key": os.environ["PLATSUPPSLAG_API_KEY"],
-        "SearchString": search_string,
+        "input": search_string,
+        "format": "json",
     }
-    res = requests.get("https://api.sl.se/api2/typeahead.json", params)
-    return res.json()["ResponseData"][0]["SiteId"]
+    res = requests.get("https://api.resrobot.se/v2/location.name", params)
+    return res.json()["StopLocation"][0]["id"]

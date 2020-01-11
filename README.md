@@ -9,8 +9,8 @@ Trafikboxen is a realtime display for your public transportation departures.
 2. Install python 3.8
 3. Create a virtual environment with `python3.8 -m venv .venv`
 4. Install development requirements by running `make install`. You need to have make installed for this to work.
-5. Get an API key for [ResRobot Stolptidtabeller 2 - Avgående Trafik](https://www.trafiklab.se/api/resrobot-stolptidtabeller-2) and set as an environment variable with `export RESROBOT_API_KEY=<YOUR_API_KEY>`
-6. Get an API key for [SL Platsuppslag](https://www.trafiklab.se/api/sl-platsuppslag) and set as an environment variable with `export PLATSUPPSLAG_API_KEY=<YOUR_API_KEY>`
+5. Get an API key for [ResRobot Stolptidtabeller 2 - Avgående Trafik](https://www.trafiklab.se/api/resrobot-stolptidtabeller-2) and set as an environment variable with `export TIMETABLE_API_KEY=<YOUR_API_KEY>`
+6. Get an API key for [ResRobot Reseplaneraren](https://www.trafiklab.se/api/resrobot-reseplanerare) and set as an environment variable with `export PLATSUPPSLAG_API_KEY=<YOUR_API_KEY>`
 
 ####Running the tests
 The test suite is executed by running `make test`.
